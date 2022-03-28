@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0px 20px;
+  position: relative;
+  @media (max-width: 540px) {
+    padding: 0 !important;
+  }
+}
+
+body {
+  background-image: url("../img/baceground3.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+  min-height: 100vh;
+  &.chenge {
+    background-image: inherit;
+  }
+}
+
+:root {
+  --main-color: rgb(223, 206, 116);
+}
+
+%gedin {
+  background: rgb(223, 206, 116);
+  background: linear-gradient(
+    162deg,
+    rgba(223, 206, 116, 1) 0%,
+    rgba(237, 217, 154, 1) 95%,
+    rgba(223, 206, 116, 1) 0%,
+    rgba(255, 255, 255, 1) 99%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}

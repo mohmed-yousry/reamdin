@@ -1,0 +1,63 @@
+doctype html
+html(lang="ar")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon" href="#")
+        link(rel="stylesheet", href="../css/all.min.css")
+        block main-css
+            link(rel="stylesheet", href="./css/home.css")
+        block title
+            title الامساكية
+    body 
+        nav.nav-top 
+            .fanois 
+                img(src="./img/fanoes.gif", alt="alt")
+            .container
+                .content 
+                    .left.brend 
+                        a(href="")  #[i( class="fa-solid fa-moon moon me-1")] رمضان كريم
+                    .right.links 
+                        ul
+                            block Links
+                                li.active #[a(href="./index.html") الامساكية]   
+                                li #[a(href="./quren.html") القران الكريم]  
+                                li #[a(href="./azkir.html") الاذكار]   
+                    .togle 
+                        i( class="fa-solid fa-align-justify")
+        block main-section
+            section.data.amsik 
+                .border.top.top-left
+                    img(src="./img/ss-removebg-preview.png", alt="alt")
+                .border.top.top-right
+                    img(src="./img/ss-removebg-preview.png", alt="alt")
+                .border.botoom.left
+                    img(src="./img/ss-removebg-preview.png", alt="alt")
+                .border.botoom.right 
+                    img(src="./img/ss-removebg-preview.png", alt="alt")
+                .container 
+                    .title 
+                        .left 
+                            h1 Ramadan Kareem
+                        .right 
+                            h1  الامساكية
+                    .taple 
+                        table 
+                            thead  
+                                th رمضان
+                                th التاريخ
+                                th اليوم
+                                th الامساك
+                                th الفجر
+                                th المغرب
+                            tbody 
+                        
+        footer 
+            .content 
+                .top 
+                    p جميع الحقوق محفوظة لصالح &copy; #[a(target = "_blank"  href="https://www.facebook.com/MohamedAhmedhacker/") محمد يسرى ]
+                
+        script(src="./js/nav.js") 
+        block main-js
+            script(src="./js/home.js") 

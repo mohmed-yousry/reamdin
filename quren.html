@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="./css/quren.css">
+    <title>القرآن الكريم</title>
+  </head>
+  <body> 
+    <nav class="nav-top"> 
+      <div class="fanois"> <img src="./img/fanoes.gif" alt="alt"></div>
+      <div class="container">
+        <div class="content"> 
+          <div class="left brend"> <a href=""> <i class="fa-solid fa-moon moon me-1"></i> رمضان كريم</a></div>
+          <div class="right links"> 
+            <ul>
+              <li><a href="./index.html">الامساكية</a>   </li>
+              <li class="active"><a href="./quren.html">القران الكريم</a>  </li>
+              <li><a href="./azkir.html">الاذكار</a>   </li>
+            </ul>
+          </div>
+          <div class="togle"> <i class="fa-solid fa-align-justify"></i></div>
+        </div>
+      </div>
+    </nav>
+    <section class="quren"> 
+      <div class="container"> 
+        <div class="content"> 
+          <div class="settings">
+            <div class="acurdion"> 
+              <div class="item">
+                <button class="acurdion-btn">معلومات السورة</button>
+                <div class="content"> 
+                  <div class="soure-select col">
+                    <div class="left"> 
+                      <p>اختيار السورة</p>
+                    </div>
+                    <div class="right"> 
+                      <select class="select-sure" name=""> </select>
+                    </div>
+                  </div>
+                  <div class="add-ayet col">
+                    <div class="left"> 
+                      <p>عدد الايات</p>
+                    </div>
+                    <div class="right"> 
+                      <input class="input-ayet" type="text" disabled>
+                    </div>
+                  </div>
+                  <div class="ayet-select col">
+                    <div class="left"> 
+                      <p>مكان النزول </p>
+                    </div>
+                    <div class="right"> 
+                      <input class="loction" type="text" disabled>
+                    </div>
+                  </div>
+                  <div class="seve-page-number-in-locelStoredg col-12">
+                    <button class="seve-page">حفظ الورد الحالى  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <button class="btn acurdion-btn">اعدادات الوان الصفحة </button>
+                <div class="content"> 
+                  <div class="add-ayet col">
+                    <div class="left"> 
+                      <p>اختار لون الخلفية </p>
+                    </div>
+                    <div class="right color"> 
+                      <input class="input-ayet" type="color" id="selectbacegroundcolor">
+                    </div>
+                  </div>
+                  <div class="add-ayet col">
+                    <div class="left"> 
+                      <p>اختار لون الكلام</p>
+                    </div>
+                    <div class="right color"> 
+                      <input class="input-ayet" type="color" id="selectColorWrite1">
+                    </div>
+                  </div>
+                  <div class="seve-page-number-in-locelStoredg col-12">
+                    <button class="seve-color">حفظ اعدادات الالوان الى المفضلة    </button>
+                    <div class="error-color">يبدوا ان احد الالوان لم يتم اختياره</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <button class="btn acurdion-btn">مشغل الصوت </button>
+                <div class="content"> 
+                  <div class="col-12"> 
+                    <audio class="quranPlayer" controls></audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="seting-page">
+              <div class="left"> <span class="text-light ms-2 name-sore">اسم السورة :  </span><span class="text-light fw-bold sour-name"></span></div>
+              <div class="midlle">
+                <div class="angles"> <i class="fa-solid fa-angle-left me-3 left-cursoil-btn "> </i>
+                  <spnn class="number-page"> </spnn><span class="allPageLength"> / 604</span><i class="fa-solid fa-angle-right ms-3 right-cursoil-btn"> </i>
+                </div>
+              </div>
+              <div class="right"><span class="text-light ms-2"> الجزء : </span><span class="text-light fw-bold span-juz"> </span></div>
+            </div>
+            <div class="content">
+              <div class="curoil"><i class="fa-solid fa-circle-play   start-quren" title="تشغيل الايات المحددة"></i>
+                <div class="curoil-item" number-page="1"></div>
+                <div class="curoil-item" number-page="2"></div>
+                <div class="curoil-item" number-page="3"></div>
+                <div class="curoil-item" number-page="4"></div>
+                <div class="curoil-item" number-page="5"></div>
+                <div class="curoil-item" number-page="6"></div>
+                <div class="curoil-item" number-page="7"></div>
+                <div class="curoil-item" number-page="8"></div>
+                <div class="curoil-item" number-page="9"></div>
+                <div class="curoil-item" number-page="10"></div>
+                <div class="curoil-item" number-page="11"></div>
+                <div class="curoil-item" number-page="12"></div>
+                <div class="curoil-item" number-page="13"></div>
+                <div class="curoil-item" number-page="14"></div>
+                <div class="curoil-item" number-page="15"></div>
+                <div class="curoil-item" number-page="16"></div>
+                <div class="curoil-item" number-page="17"></div>
+                <div class="curoil-item" number-page="18"></div>
+                <div class="curoil-item" number-page="19"></div>
+                <div class="curoil-item" number-page="20"></div>
+                <div class="curoil-item" number-page="21"></div>
+                <div class="curoil-item" number-page="22"></div>
+                <div class="curoil-item" number-page="23"></div>
+                <div class="curoil-item" number-page="24"></div>
+                <div class="curoil-item" number-page="25"></div>
+                <div class="curoil-item" number-page="26"></div>
+                <div class="curoil-item" number-page="27"></div>
+                <div class="curoil-item" number-page="28"></div>
+                <div class="curoil-item" number-page="29"></div>
+                <div class="curoil-item" number-page="30"></div>
+                <div class="curoil-item" number-page="31"></div>
+                <div class="curoil-item" number-page="32"></div>
+                <div class="curoil-item" number-page="33"></div>
+                <div class="curoil-item" number-page="34"></div>
+                <div class="curoil-item" number-page="35"></div>
+                <div class="curoil-item" number-page="36"></div>
+                <div class="curoil-item" number-page="37"></div>
+                <div class="curoil-item" number-page="38"></div>
+                <div class="curoil-item" number-page="39"></div>
+                <div class="curoil-item" number-page="40"></div>
+                <div class="curoil-item" number-page="41"></div>
+                <div class="curoil-item" number-page="42"></div>
+                <div class="curoil-item" number-page="43"></div>
+                <div class="curoil-item" number-page="44"></div>
+                <div class="curoil-item" number-page="45"></div>
+                <div class="curoil-item" number-page="46"></div>
+                <div class="curoil-item" number-page="47"></div>
+                <div class="curoil-item" number-page="48"></div>
+                <div class="curoil-item" number-page="49"></div>
+                <div class="curoil-item" number-page="50"></div>
+                <div class="curoil-item" number-page="51"></div>
+                <div class="curoil-item" number-page="52"></div>
+                <div class="curoil-item" number-page="53"></div>
+                <div class="curoil-item" number-page="54"></div>
+                <div class="curoil-item" number-page="55"></div>
+                <div class="curoil-item" number-page="56"></div>
+                <div class="curoil-item" number-page="57"></div>
+                <div class="curoil-item" number-page="58"></div>
+                <div class="curoil-item" number-page="59"></div>
+                <div class="curoil-item" number-page="60"></div>
+                <div class="curoil-item" number-page="61"></div>
+                <div class="curoil-item" number-page="62"></div>
+                <div class="curoil-item" number-page="63"></div>
+                <div class="curoil-item" number-page="64"></div>
+                <div class="curoil-item" number-page="65"></div>
+                <div class="curoil-item" number-page="66"></div>
+                <div class="curoil-item" number-page="67"></div>
+                <div class="curoil-item" number-page="68"></div>
+                <div class="curoil-item" number-page="69"></div>
+                <div class="curoil-item" number-page="70"></div>
+                <div class="curoil-item" number-page="71"></div>
+                <div class="curoil-item" number-page="72"></div>
+                <div class="curoil-item" number-page="73"></div>
+                <div class="curoil-item" number-page="74"></div>
+                <div class="curoil-item" number-page="75"></div>
+                <div class="curoil-item" number-page="76"></div>
+                <div class="curoil-item" number-page="77"></div>
+                <div class="curoil-item" number-page="78"></div>
+                <div class="curoil-item" number-page="79"></div>
+                <div class="curoil-item" number-page="80"></div>
+                <div class="curoil-item" number-page="81"></div>
+                <div class="curoil-item" number-page="82"></div>
+                <div class="curoil-item" number-page="83"></div>
+                <div class="curoil-item" number-page="84"></div>
+                <div class="curoil-item" number-page="85"></div>
+                <div class="curoil-item" number-page="86"></div>
+                <div class="curoil-item" number-page="87"></div>
+                <div class="curoil-item" number-page="88"></div>
+                <div class="curoil-item" number-page="89"></div>
+                <div class="curoil-item" number-page="90"></div>
+                <div class="curoil-item" number-page="91"></div>
+                <div class="curoil-item" number-page="92"></div>
+                <div class="curoil-item" number-page="93"></div>
+                <div class="curoil-item" number-page="94"></div>
+                <div class="curoil-item" number-page="95"></div>
+                <div class="curoil-item" number-page="96"></div>
+                <div class="curoil-item" number-page="97"></div>
+                <div class="curoil-item" number-page="98"></div>
+                <div class="curoil-item" number-page="99"></div>
+                <div class="curoil-item" number-page="100"></div>
+                <div class="curoil-item" number-page="101"></div>
+                <div class="curoil-item" number-page="102"></div>
+                <div class="curoil-item" number-page="103"></div>
+                <div class="curoil-item" number-page="104"></div>
+                <div class="curoil-item" number-page="105"></div>
+                <div class="curoil-item" number-page="106"></div>
+                <div class="curoil-item" number-page="107"></div>
+                <div class="curoil-item" number-page="108"></div>
+                <div class="curoil-item" number-page="109"></div>
+                <div class="curoil-item" number-page="110"></div>
+                <div class="curoil-item" number-page="111"></div>
+                <div class="curoil-item" number-page="112"></div>
+                <div class="curoil-item" number-page="113"></div>
+                <div class="curoil-item" number-page="114"></div>
+                <div class="curoil-item" number-page="115"></div>
+                <div class="curoil-item" number-page="116"></div>
+                <div class="curoil-item" number-page="117"></div>
+                <div class="curoil-item" number-page="118"></div>
+                <div class="curoil-item" number-page="119"></div>
+                <div class="curoil-item" number-page="120"></div>
+                <div class="curoil-item" number-page="121"></div>
+                <div class="curoil-item" number-page="122"></div>
+                <div class="curoil-item" number-page="123"></div>
+                <div class="curoil-item" number-page="124"></div>
+                <div class="curoil-item" number-page="125"></div>
+                <div class="curoil-item" number-page="126"></div>
+                <div class="curoil-item" number-page="127"></div>
+                <div class="curoil-item" number-page="128"></div>
+                <div class="curoil-item" number-page="129"></div>
+                <div class="curoil-item" number-page="130"></div>
+                <div class="curoil-item" number-page="131"></div>
+                <div class="curoil-item" number-page="132"></div>
+                <div class="curoil-item" number-page="133"></div>
+                <div class="curoil-item" number-page="134"></div>
+                <div class="curoil-item" number-page="135"></div>
+                <div class="curoil-item" number-page="136"></div>
+                <div class="curoil-item" number-page="137"></div>
+                <div class="curoil-item" number-page="138"></div>
+                <div class="curoil-item" number-page="139"></div>
+                <div class="curoil-item" number-page="140"></div>
+                <div class="curoil-item" number-page="141"></div>
+                <div class="curoil-item" number-page="142"></div>
+                <div class="curoil-item" number-page="143"></div>
+                <div class="curoil-item" number-page="144"></div>
+                <div class="curoil-item" number-page="145"></div>
+                <div class="curoil-item" number-page="146"></div>
+                <div class="curoil-item" number-page="147"></div>
+                <div class="curoil-item" number-page="148"></div>
+                <div class="curoil-item" number-page="149"></div>
+                <div class="curoil-item" number-page="150"></div>
+                <div class="curoil-item" number-page="151"></div>
+                <div class="curoil-item" number-page="152"></div>
+                <div class="curoil-item" number-page="153"></div>
+                <div class="curoil-item" number-page="154"></div>
+                <div class="curoil-item" number-page="155"></div>
+                <div class="curoil-item" number-page="156"></div>
+                <div class="curoil-item" number-page="157"></div>
+                <div class="curoil-item" number-page="158"></div>
+                <div class="curoil-item" number-page="159"></div>
+                <div class="curoil-item" number-page="160"></div>
+                <div class="curoil-item" number-page="161"></div>
+                <div class="curoil-item" number-page="162"></div>
+                <div class="curoil-item" number-page="163"></div>
+                <div class="curoil-item" number-page="164"></div>
+                <div class="curoil-item" number-page="165"></div>
+                <div class="curoil-item" number-page="166"></div>
+                <div class="curoil-item" number-page="167"></div>
+                <div class="curoil-item" number-page="168"></div>
+                <div class="curoil-item" number-page="169"></div>
+                <div class="curoil-item" number-page="170"></div>
+                <div class="curoil-item" number-page="171"></div>
+                <div class="curoil-item" number-page="172"></div>
+                <div class="curoil-item" number-page="173"></div>
+                <div class="curoil-item" number-page="174"></div>
+                <div class="curoil-item" number-page="175"></div>
+                <div class="curoil-item" number-page="176"></div>
+                <div class="curoil-item" number-page="177"></div>
+                <div class="curoil-item" number-page="178"></div>
+                <div class="curoil-item" number-page="179"></div>
+                <div class="curoil-item" number-page="180"></div>
+                <div class="curoil-item" number-page="181"></div>
+                <div class="curoil-item" number-page="182"></div>
+                <div class="curoil-item" number-page="183"></div>
+                <div class="curoil-item" number-page="184"></div>
+                <div class="curoil-item" number-page="185"></div>
+                <div class="curoil-item" number-page="186"></div>
+                <div class="curoil-item" number-page="187"></div>
+                <div class="curoil-item" number-page="188"></div>
+                <div class="curoil-item" number-page="189"></div>
+                <div class="curoil-item" number-page="190"></div>
+                <div class="curoil-item" number-page="191"></div>
+                <div class="curoil-item" number-page="192"></div>
+                <div class="curoil-item" number-page="193"></div>
+                <div class="curoil-item" number-page="194"></div>
+                <div class="curoil-item" number-page="195"></div>
+                <div class="curoil-item" number-page="196"></div>
+                <div class="curoil-item" number-page="197"></div>
+                <div class="curoil-item" number-page="198"></div>
+                <div class="curoil-item" number-page="199"></div>
+                <div class="curoil-item" number-page="200"></div>
+                <div class="curoil-item" number-page="201"></div>
+                <div class="curoil-item" number-page="202"></div>
+                <div class="curoil-item" number-page="203"></div>
+                <div class="curoil-item" number-page="204"></div>
+                <div class="curoil-item" number-page="205"></div>
+                <div class="curoil-item" number-page="206"></div>
+                <div class="curoil-item" number-page="207"></div>
+                <div class="curoil-item" number-page="208"></div>
+                <div class="curoil-item" number-page="209"></div>
+                <div class="curoil-item" number-page="210"></div>
+                <div class="curoil-item" number-page="211"></div>
+                <div class="curoil-item" number-page="212"></div>
+                <div class="curoil-item" number-page="213"></div>
+                <div class="curoil-item" number-page="214"></div>
+                <div class="curoil-item" number-page="215"></div>
+                <div class="curoil-item" number-page="216"></div>
+                <div class="curoil-item" number-page="217"></div>
+                <div class="curoil-item" number-page="218"></div>
+                <div class="curoil-item" number-page="219"></div>
+                <div class="curoil-item" number-page="220"></div>
+                <div class="curoil-item" number-page="221"></div>
+                <div class="curoil-item" number-page="222"></div>
+                <div class="curoil-item" number-page="223"></div>
+                <div class="curoil-item" number-page="224"></div>
+                <div class="curoil-item" number-page="225"></div>
+                <div class="curoil-item" number-page="226"></div>
+                <div class="curoil-item" number-page="227"></div>
+                <div class="curoil-item" number-page="228"></div>
+                <div class="curoil-item" number-page="229"></div>
+                <div class="curoil-item" number-page="230"></div>
+                <div class="curoil-item" number-page="231"></div>
+                <div class="curoil-item" number-page="232"></div>
+                <div class="curoil-item" number-page="233"></div>
+                <div class="curoil-item" number-page="234"></div>
+                <div class="curoil-item" number-page="235"></div>
+                <div class="curoil-item" number-page="236"></div>
+                <div class="curoil-item" number-page="237"></div>
+                <div class="curoil-item" number-page="238"></div>
+                <div class="curoil-item" number-page="239"></div>
+                <div class="curoil-item" number-page="240"></div>
+                <div class="curoil-item" number-page="241"></div>
+                <div class="curoil-item" number-page="242"></div>
+                <div class="curoil-item" number-page="243"></div>
+                <div class="curoil-item" number-page="244"></div>
+                <div class="curoil-item" number-page="245"></div>
+                <div class="curoil-item" number-page="246"></div>
+                <div class="curoil-item" number-page="247"></div>
+                <div class="curoil-item" number-page="248"></div>
+                <div class="curoil-item" number-page="249"></div>
+                <div class="curoil-item" number-page="250"></div>
+                <div class="curoil-item" number-page="251"></div>
+                <div class="curoil-item" number-page="252"></div>
+                <div class="curoil-item" number-page="253"></div>
+                <div class="curoil-item" number-page="254"></div>
+                <div class="curoil-item" number-page="255"></div>
+                <div class="curoil-item" number-page="256"></div>
+                <div class="curoil-item" number-page="257"></div>
+                <div class="curoil-item" number-page="258"></div>
+                <div class="curoil-item" number-page="259"></div>
+                <div class="curoil-item" number-page="260"></div>
+                <div class="curoil-item" number-page="261"></div>
+                <div class="curoil-item" number-page="262"></div>
+                <div class="curoil-item" number-page="263"></div>
+                <div class="curoil-item" number-page="264"></div>
+                <div class="curoil-item" number-page="265"></div>
+                <div class="curoil-item" number-page="266"></div>
+                <div class="curoil-item" number-page="267"></div>
+                <div class="curoil-item" number-page="268"></div>
+                <div class="curoil-item" number-page="269"></div>
+                <div class="curoil-item" number-page="270"></div>
+                <div class="curoil-item" number-page="271"></div>
+                <div class="curoil-item" number-page="272"></div>
+                <div class="curoil-item" number-page="273"></div>
+                <div class="curoil-item" number-page="274"></div>
+                <div class="curoil-item" number-page="275"></div>
+                <div class="curoil-item" number-page="276"></div>
+                <div class="curoil-item" number-page="277"></div>
+                <div class="curoil-item" number-page="278"></div>
+                <div class="curoil-item" number-page="279"></div>
+                <div class="curoil-item" number-page="280"></div>
+                <div class="curoil-item" number-page="281"></div>
+                <div class="curoil-item" number-page="282"></div>
+                <div class="curoil-item" number-page="283"></div>
+                <div class="curoil-item" number-page="284"></div>
+                <div class="curoil-item" number-page="285"></div>
+                <div class="curoil-item" number-page="286"></div>
+                <div class="curoil-item" number-page="287"></div>
+                <div class="curoil-item" number-page="288"></div>
+                <div class="curoil-item" number-page="289"></div>
+                <div class="curoil-item" number-page="290"></div>
+                <div class="curoil-item" number-page="291"></div>
+                <div class="curoil-item" number-page="292"></div>
+                <div class="curoil-item" number-page="293"></div>
+                <div class="curoil-item" number-page="294"></div>
+                <div class="curoil-item" number-page="295"></div>
+                <div class="curoil-item" number-page="296"></div>
+                <div class="curoil-item" number-page="297"></div>
+                <div class="curoil-item" number-page="298"></div>
+                <div class="curoil-item" number-page="299"></div>
+                <div class="curoil-item" number-page="300"></div>
+                <div class="curoil-item" number-page="301"></div>
+                <div class="curoil-item" number-page="302"></div>
+                <div class="curoil-item" number-page="303"></div>
+                <div class="curoil-item" number-page="304"></div>
+                <div class="curoil-item" number-page="305"></div>
+                <div class="curoil-item" number-page="306"></div>
+                <div class="curoil-item" number-page="307"></div>
+                <div class="curoil-item" number-page="308"></div>
+                <div class="curoil-item" number-page="309"></div>
+                <div class="curoil-item" number-page="310"></div>
+                <div class="curoil-item" number-page="311"></div>
+                <div class="curoil-item" number-page="312"></div>
+                <div class="curoil-item" number-page="313"></div>
+                <div class="curoil-item" number-page="314"></div>
+                <div class="curoil-item" number-page="315"></div>
+                <div class="curoil-item" number-page="316"></div>
+                <div class="curoil-item" number-page="317"></div>
+                <div class="curoil-item" number-page="318"></div>
+                <div class="curoil-item" number-page="319"></div>
+                <div class="curoil-item" number-page="320"></div>
+                <div class="curoil-item" number-page="321"></div>
+                <div class="curoil-item" number-page="322"></div>
+                <div class="curoil-item" number-page="323"></div>
+                <div class="curoil-item" number-page="324"></div>
+                <div class="curoil-item" number-page="325"></div>
+                <div class="curoil-item" number-page="326"></div>
+                <div class="curoil-item" number-page="327"></div>
+                <div class="curoil-item" number-page="328"></div>
+                <div class="curoil-item" number-page="329"></div>
+                <div class="curoil-item" number-page="330"></div>
+                <div class="curoil-item" number-page="331"></div>
+                <div class="curoil-item" number-page="332"></div>
+                <div class="curoil-item" number-page="333"></div>
+                <div class="curoil-item" number-page="334"></div>
+                <div class="curoil-item" number-page="335"></div>
+                <div class="curoil-item" number-page="336"></div>
+                <div class="curoil-item" number-page="337"></div>
+                <div class="curoil-item" number-page="338"></div>
+                <div class="curoil-item" number-page="339"></div>
+                <div class="curoil-item" number-page="340"></div>
+                <div class="curoil-item" number-page="341"></div>
+                <div class="curoil-item" number-page="342"></div>
+                <div class="curoil-item" number-page="343"></div>
+                <div class="curoil-item" number-page="344"></div>
+                <div class="curoil-item" number-page="345"></div>
+                <div class="curoil-item" number-page="346"></div>
+                <div class="curoil-item" number-page="347"></div>
+                <div class="curoil-item" number-page="348"></div>
+                <div class="curoil-item" number-page="349"></div>
+                <div class="curoil-item" number-page="350"></div>
+                <div class="curoil-item" number-page="351"></div>
+                <div class="curoil-item" number-page="352"></div>
+                <div class="curoil-item" number-page="353"></div>
+                <div class="curoil-item" number-page="354"></div>
+                <div class="curoil-item" number-page="355"></div>
+                <div class="curoil-item" number-page="356"></div>
+                <div class="curoil-item" number-page="357"></div>
+                <div class="curoil-item" number-page="358"></div>
+                <div class="curoil-item" number-page="359"></div>
+                <div class="curoil-item" number-page="360"></div>
+                <div class="curoil-item" number-page="361"></div>
+                <div class="curoil-item" number-page="362"></div>
+                <div class="curoil-item" number-page="363"></div>
+                <div class="curoil-item" number-page="364"></div>
+                <div class="curoil-item" number-page="365"></div>
+                <div class="curoil-item" number-page="366"></div>
+                <div class="curoil-item" number-page="367"></div>
+                <div class="curoil-item" number-page="368"></div>
+                <div class="curoil-item" number-page="369"></div>
+                <div class="curoil-item" number-page="370"></div>
+                <div class="curoil-item" number-page="371"></div>
+                <div class="curoil-item" number-page="372"></div>
+                <div class="curoil-item" number-page="373"></div>
+                <div class="curoil-item" number-page="374"></div>
+                <div class="curoil-item" number-page="375"></div>
+                <div class="curoil-item" number-page="376"></div>
+                <div class="curoil-item" number-page="377"></div>
+                <div class="curoil-item" number-page="378"></div>
+                <div class="curoil-item" number-page="379"></div>
+                <div class="curoil-item" number-page="380"></div>
+                <div class="curoil-item" number-page="381"></div>
+                <div class="curoil-item" number-page="382"></div>
+                <div class="curoil-item" number-page="383"></div>
+                <div class="curoil-item" number-page="384"></div>
+                <div class="curoil-item" number-page="385"></div>
+                <div class="curoil-item" number-page="386"></div>
+                <div class="curoil-item" number-page="387"></div>
+                <div class="curoil-item" number-page="388"></div>
+                <div class="curoil-item" number-page="389"></div>
+                <div class="curoil-item" number-page="390"></div>
+                <div class="curoil-item" number-page="391"></div>
+                <div class="curoil-item" number-page="392"></div>
+                <div class="curoil-item" number-page="393"></div>
+                <div class="curoil-item" number-page="394"></div>
+                <div class="curoil-item" number-page="395"></div>
+                <div class="curoil-item" number-page="396"></div>
+                <div class="curoil-item" number-page="397"></div>
+                <div class="curoil-item" number-page="398"></div>
+                <div class="curoil-item" number-page="399"></div>
+                <div class="curoil-item" number-page="400"></div>
+                <div class="curoil-item" number-page="401"></div>
+                <div class="curoil-item" number-page="402"></div>
+                <div class="curoil-item" number-page="403"></div>
+                <div class="curoil-item" number-page="404"></div>
+                <div class="curoil-item" number-page="405"></div>
+                <div class="curoil-item" number-page="406"></div>
+                <div class="curoil-item" number-page="407"></div>
+                <div class="curoil-item" number-page="408"></div>
+                <div class="curoil-item" number-page="409"></div>
+                <div class="curoil-item" number-page="410"></div>
+                <div class="curoil-item" number-page="411"></div>
+                <div class="curoil-item" number-page="412"></div>
+                <div class="curoil-item" number-page="413"></div>
+                <div class="curoil-item" number-page="414"></div>
+                <div class="curoil-item" number-page="415"></div>
+                <div class="curoil-item" number-page="416"></div>
+                <div class="curoil-item" number-page="417"></div>
+                <div class="curoil-item" number-page="418"></div>
+                <div class="curoil-item" number-page="419"></div>
+                <div class="curoil-item" number-page="420"></div>
+                <div class="curoil-item" number-page="421"></div>
+                <div class="curoil-item" number-page="422"></div>
+                <div class="curoil-item" number-page="423"></div>
+                <div class="curoil-item" number-page="424"></div>
+                <div class="curoil-item" number-page="425"></div>
+                <div class="curoil-item" number-page="426"></div>
+                <div class="curoil-item" number-page="427"></div>
+                <div class="curoil-item" number-page="428"></div>
+                <div class="curoil-item" number-page="429"></div>
+                <div class="curoil-item" number-page="430"></div>
+                <div class="curoil-item" number-page="431"></div>
+                <div class="curoil-item" number-page="432"></div>
+                <div class="curoil-item" number-page="433"></div>
+                <div class="curoil-item" number-page="434"></div>
+                <div class="curoil-item" number-page="435"></div>
+                <div class="curoil-item" number-page="436"></div>
+                <div class="curoil-item" number-page="437"></div>
+                <div class="curoil-item" number-page="438"></div>
+                <div class="curoil-item" number-page="439"></div>
+                <div class="curoil-item" number-page="440"></div>
+                <div class="curoil-item" number-page="441"></div>
+                <div class="curoil-item" number-page="442"></div>
+                <div class="curoil-item" number-page="443"></div>
+                <div class="curoil-item" number-page="444"></div>
+                <div class="curoil-item" number-page="445"></div>
+                <div class="curoil-item" number-page="446"></div>
+                <div class="curoil-item" number-page="447"></div>
+                <div class="curoil-item" number-page="448"></div>
+                <div class="curoil-item" number-page="449"></div>
+                <div class="curoil-item" number-page="450"></div>
+                <div class="curoil-item" number-page="451"></div>
+                <div class="curoil-item" number-page="452"></div>
+                <div class="curoil-item" number-page="453"></div>
+                <div class="curoil-item" number-page="454"></div>
+                <div class="curoil-item" number-page="455"></div>
+                <div class="curoil-item" number-page="456"></div>
+                <div class="curoil-item" number-page="457"></div>
+                <div class="curoil-item" number-page="458"></div>
+                <div class="curoil-item" number-page="459"></div>
+                <div class="curoil-item" number-page="460"></div>
+                <div class="curoil-item" number-page="461"></div>
+                <div class="curoil-item" number-page="462"></div>
+                <div class="curoil-item" number-page="463"></div>
+                <div class="curoil-item" number-page="464"></div>
+                <div class="curoil-item" number-page="465"></div>
+                <div class="curoil-item" number-page="466"></div>
+                <div class="curoil-item" number-page="467"></div>
+                <div class="curoil-item" number-page="468"></div>
+                <div class="curoil-item" number-page="469"></div>
+                <div class="curoil-item" number-page="470"></div>
+                <div class="curoil-item" number-page="471"></div>
+                <div class="curoil-item" number-page="472"></div>
+                <div class="curoil-item" number-page="473"></div>
+                <div class="curoil-item" number-page="474"></div>
+                <div class="curoil-item" number-page="475"></div>
+                <div class="curoil-item" number-page="476"></div>
+                <div class="curoil-item" number-page="477"></div>
+                <div class="curoil-item" number-page="478"></div>
+                <div class="curoil-item" number-page="479"></div>
+                <div class="curoil-item" number-page="480"></div>
+                <div class="curoil-item" number-page="481"></div>
+                <div class="curoil-item" number-page="482"></div>
+                <div class="curoil-item" number-page="483"></div>
+                <div class="curoil-item" number-page="484"></div>
+                <div class="curoil-item" number-page="485"></div>
+                <div class="curoil-item" number-page="486"></div>
+                <div class="curoil-item" number-page="487"></div>
+                <div class="curoil-item" number-page="488"></div>
+                <div class="curoil-item" number-page="489"></div>
+                <div class="curoil-item" number-page="490"></div>
+                <div class="curoil-item" number-page="491"></div>
+                <div class="curoil-item" number-page="492"></div>
+                <div class="curoil-item" number-page="493"></div>
+                <div class="curoil-item" number-page="494"></div>
+                <div class="curoil-item" number-page="495"></div>
+                <div class="curoil-item" number-page="496"></div>
+                <div class="curoil-item" number-page="497"></div>
+                <div class="curoil-item" number-page="498"></div>
+                <div class="curoil-item" number-page="499"></div>
+                <div class="curoil-item" number-page="500"></div>
+                <div class="curoil-item" number-page="501"></div>
+                <div class="curoil-item" number-page="502"></div>
+                <div class="curoil-item" number-page="503"></div>
+                <div class="curoil-item" number-page="504"></div>
+                <div class="curoil-item" number-page="505"></div>
+                <div class="curoil-item" number-page="506"></div>
+                <div class="curoil-item" number-page="507"></div>
+                <div class="curoil-item" number-page="508"></div>
+                <div class="curoil-item" number-page="509"></div>
+                <div class="curoil-item" number-page="510"></div>
+                <div class="curoil-item" number-page="511"></div>
+                <div class="curoil-item" number-page="512"></div>
+                <div class="curoil-item" number-page="513"></div>
+                <div class="curoil-item" number-page="514"></div>
+                <div class="curoil-item" number-page="515"></div>
+                <div class="curoil-item" number-page="516"></div>
+                <div class="curoil-item" number-page="517"></div>
+                <div class="curoil-item" number-page="518"></div>
+                <div class="curoil-item" number-page="519"></div>
+                <div class="curoil-item" number-page="520"></div>
+                <div class="curoil-item" number-page="521"></div>
+                <div class="curoil-item" number-page="522"></div>
+                <div class="curoil-item" number-page="523"></div>
+                <div class="curoil-item" number-page="524"></div>
+                <div class="curoil-item" number-page="525"></div>
+                <div class="curoil-item" number-page="526"></div>
+                <div class="curoil-item" number-page="527"></div>
+                <div class="curoil-item" number-page="528"></div>
+                <div class="curoil-item" number-page="529"></div>
+                <div class="curoil-item" number-page="530"></div>
+                <div class="curoil-item" number-page="531"></div>
+                <div class="curoil-item" number-page="532"></div>
+                <div class="curoil-item" number-page="533"></div>
+                <div class="curoil-item" number-page="534"></div>
+                <div class="curoil-item" number-page="535"></div>
+                <div class="curoil-item" number-page="536"></div>
+                <div class="curoil-item" number-page="537"></div>
+                <div class="curoil-item" number-page="538"></div>
+                <div class="curoil-item" number-page="539"></div>
+                <div class="curoil-item" number-page="540"></div>
+                <div class="curoil-item" number-page="541"></div>
+                <div class="curoil-item" number-page="542"></div>
+                <div class="curoil-item" number-page="543"></div>
+                <div class="curoil-item" number-page="544"></div>
+                <div class="curoil-item" number-page="545"></div>
+                <div class="curoil-item" number-page="546"></div>
+                <div class="curoil-item" number-page="547"></div>
+                <div class="curoil-item" number-page="548"></div>
+                <div class="curoil-item" number-page="549"></div>
+                <div class="curoil-item" number-page="550"></div>
+                <div class="curoil-item" number-page="551"></div>
+                <div class="curoil-item" number-page="552"></div>
+                <div class="curoil-item" number-page="553"></div>
+                <div class="curoil-item" number-page="554"></div>
+                <div class="curoil-item" number-page="555"></div>
+                <div class="curoil-item" number-page="556"></div>
+                <div class="curoil-item" number-page="557"></div>
+                <div class="curoil-item" number-page="558"></div>
+                <div class="curoil-item" number-page="559"></div>
+                <div class="curoil-item" number-page="560"></div>
+                <div class="curoil-item" number-page="561"></div>
+                <div class="curoil-item" number-page="562"></div>
+                <div class="curoil-item" number-page="563"></div>
+                <div class="curoil-item" number-page="564"></div>
+                <div class="curoil-item" number-page="565"></div>
+                <div class="curoil-item" number-page="566"></div>
+                <div class="curoil-item" number-page="567"></div>
+                <div class="curoil-item" number-page="568"></div>
+                <div class="curoil-item" number-page="569"></div>
+                <div class="curoil-item" number-page="570"></div>
+                <div class="curoil-item" number-page="571"></div>
+                <div class="curoil-item" number-page="572"></div>
+                <div class="curoil-item" number-page="573"></div>
+                <div class="curoil-item" number-page="574"></div>
+                <div class="curoil-item" number-page="575"></div>
+                <div class="curoil-item" number-page="576"></div>
+                <div class="curoil-item" number-page="577"></div>
+                <div class="curoil-item" number-page="578"></div>
+                <div class="curoil-item" number-page="579"></div>
+                <div class="curoil-item" number-page="580"></div>
+                <div class="curoil-item" number-page="581"></div>
+                <div class="curoil-item" number-page="582"></div>
+                <div class="curoil-item" number-page="583"></div>
+                <div class="curoil-item" number-page="584"></div>
+                <div class="curoil-item" number-page="585"></div>
+                <div class="curoil-item" number-page="586"></div>
+                <div class="curoil-item" number-page="587"></div>
+                <div class="curoil-item" number-page="588"></div>
+                <div class="curoil-item" number-page="589"></div>
+                <div class="curoil-item" number-page="590"></div>
+                <div class="curoil-item" number-page="591"></div>
+                <div class="curoil-item" number-page="592"></div>
+                <div class="curoil-item" number-page="593"></div>
+                <div class="curoil-item" number-page="594"></div>
+                <div class="curoil-item" number-page="595"></div>
+                <div class="curoil-item" number-page="596"></div>
+                <div class="curoil-item" number-page="597"></div>
+                <div class="curoil-item" number-page="598"></div>
+                <div class="curoil-item" number-page="599"></div>
+                <div class="curoil-item" number-page="600"></div>
+                <div class="curoil-item" number-page="601"></div>
+                <div class="curoil-item" number-page="602"></div>
+                <div class="curoil-item" number-page="603"></div>
+                <div class="curoil-item" number-page="604"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer> 
+      <div class="content"> 
+        <div class="top"> 
+          <p>جميع الحقوق محفوظة لصالح &copy; <a target="_blank" href="https://www.facebook.com/MohamedAhmedhacker/">محمد يسرى </a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/nav.js"> </script>
+    <script src="./js/quren.js"> </script>
+  </body>
+</html>

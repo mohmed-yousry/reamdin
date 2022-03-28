@@ -1,0 +1,38 @@
+extends ./index.pug
+block main-css
+    link(rel="stylesheet", href="./css/azkir.css")
+block title
+    title الاذكار  
+block Links
+    li #[a(href="./index.html") الامساكية]   
+    li #[a(href="./quren.html") القران الكريم]  
+    li.active #[a(href="./azkir.html") الاذكار]   
+block main-section
+    section.azkir 
+        .container 
+            .content 
+                .links 
+                    button(targit = "#content-masee" class= "active") اذكار الصباح والمساء
+                    button(targit = "#content-sleep") اذكار النوم  
+                    button(targit = "#content-after-preyer") اذكار بعد الصلاه   
+                .allContent 
+                    div( class = "active" id = "content-masee" num = "2")
+                        h2 
+                        .audio
+                            audio(src="http://www.hisnmuslim.com/audio/ar/ar_7esn_AlMoslem_by_Doors_028.mp3" controls ) 
+                        .content
+                    div(id = "content-sleep" num = "1") 
+                        h2
+                        .audio
+                            audio(src="http://www.hisnmuslim.com/audio/ar/ar_7esn_AlMoslem_by_Doors_029.mp3" controls ) 
+                        .content
+                    div(id = "content-after-preyer" num = "0") 
+                        h2
+                        .audio
+                            audio(src="http://www.hisnmuslim.com/audio/ar/ar_7esn_AlMoslem_by_Doors_026.mp3" controls ) 
+                        .content
+
+
+
+block main-js
+    script(src="./js/azkir.js") 

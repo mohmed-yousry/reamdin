@@ -1,0 +1,102 @@
+@use "./rouls";
+.nav-top {
+  overflow: hidden;
+  padding: 15px;
+  .fanois {
+    &.hiid {
+      display: none;
+    }
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    img {
+      width: 150px;
+    }
+  }
+  .container {
+    .content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: x-large;
+      flex-wrap: wrap;
+
+      .left.brend {
+        font-size: x-large;
+        display: flex;
+        transform: translateY(-13px);
+
+        a {
+          display: flex;
+          align-items: center;
+          color: white;
+        }
+        i {
+          font-size: 45px;
+          color: var(--main-color);
+          transform: translate(14px, 8px);
+        }
+      }
+      .right.links {
+        z-index: 2;
+        ul {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          li {
+            a {
+              width: 100%;
+              display: block;
+              color: white;
+            }
+            margin-left: 0.5rem;
+            padding: 8px 15px;
+            &.active,
+            &:hover {
+              @extend %gedin;
+              a {
+                color: black;
+              }
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          transition: 0.4s ease-out;
+          flex-basis: 100%;
+          margin-top: 1rem;
+          order: 1;
+          transform: translate(-150%);
+          ul {
+            flex-direction: column;
+            align-items: flex-end;
+            li {
+              margin-left: 0;
+              width: 100%;
+            }
+          }
+
+          &.active {
+            transform: translate(0px);
+          }
+        }
+      }
+      .togle {
+        border: 1px solid var(--main-color);
+        border-radius: 8px;
+        i {
+          padding: 10px;
+          cursor: pointer;
+          color: white;
+        }
+        display: none;
+        @media (max-width: 767px) {
+          display: inherit;
+        }
+      }
+    }
+  }
+}

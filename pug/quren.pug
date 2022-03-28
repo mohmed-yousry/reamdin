@@ -1,0 +1,81 @@
+extends ./index.pug
+block main-css
+    link(rel="stylesheet", href="./css/quren.css")
+block title
+    title القرآن الكريم
+block Links
+    li #[a(href="./index.html") الامساكية]   
+    li.active #[a(href="./quren.html") القران الكريم]  
+    li #[a(href="./azkir.html") الاذكار]   
+block main-section
+    section.quren 
+        .container 
+            .content 
+                .settings
+                    .acurdion 
+                        .item
+                            button.acurdion-btn معلومات السورة
+                            .content 
+                                .soure-select.col
+                                    .left 
+                                        p اختيار السورة
+                                    .right 
+                                        select(name="" class = "select-sure") 
+                                            
+                                .add-ayet.col
+                                    .left 
+                                        p عدد الايات
+                                    .right 
+                                        input(type="text" class= "input-ayet" disabled)
+                                .ayet-select.col
+                                    .left 
+                                        p مكان النزول 
+                                    .right 
+                                        input(type="text" class= "loction" disabled)
+                                .seve-page-number-in-locelStoredg.col-12
+                                    button.seve-page حفظ الورد الحالى  
+                        .item
+                            button.btn.acurdion-btn اعدادات الوان الصفحة 
+                            .content 
+                                .add-ayet.col
+                                    .left 
+                                        p اختار لون الخلفية 
+                                    .right.color 
+                                        input(type="color" class= "input-ayet" id= "selectbacegroundcolor")
+                                .add-ayet.col
+                                    .left 
+                                        p اختار لون الكلام
+                                    .right.color 
+                                        input(type="color" class= "input-ayet" id = "selectColorWrite1")
+                                .seve-page-number-in-locelStoredg.col-12
+                                    button.seve-color حفظ اعدادات الالوان الى المفضلة    
+                                    .error-color يبدوا ان احد الالوان لم يتم اختياره
+                        .item
+                            button.btn.acurdion-btn مشغل الصوت 
+                            .content 
+                                .col-12 
+                                    audio( class="quranPlayer" controls)
+                .page
+                    .seting-page
+                        .left 
+                            span.text-light.ms-2.name-sore اسم السورة :  
+                            span.text-light.fw-bold.sour-name
+                        .midlle
+                            .angles 
+                                i(class = "fa-solid fa-angle-left me-3 left-cursoil-btn ") 
+                                spnn.number-page  
+                                span.allPageLength  / 604
+                                i(class = "fa-solid fa-angle-right ms-3 right-cursoil-btn") 
+                        .right
+                            span.text-light.ms-2  الجزء : 
+                            span.text-light.fw-bold.span-juz 
+
+                    .content
+                        .curoil
+                            i(class = "fa-solid fa-circle-play   start-quren" title = "تشغيل الايات المحددة")
+                            -for(let i = 1 ; i<=604 ; i++)
+                                div(class = "curoil-item" number-page = i)
+
+
+block main-js
+    script(src="./js/quren.js") 

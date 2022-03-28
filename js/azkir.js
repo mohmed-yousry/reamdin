@@ -81,13 +81,13 @@ function getdata(url, title, parintItem) {
     });
 }
 getdata(
-  `http://www.hisnmuslim.com/api/ar/27.json`,
+  `https://www.hisnmuslim.com/api/ar/27.json`,
   `أذكار الصباح والمساء`,
   sabehAndMasee
 );
-getdata(`http://www.hisnmuslim.com/api/ar/28.json`, `أذكار النوم`, slib);
+getdata(`https://www.hisnmuslim.com/api/ar/28.json`, `أذكار النوم`, slib);
 getdata(
-  `http://www.hisnmuslim.com/api/ar/25.json`,
+  `https://www.hisnmuslim.com/api/ar/25.json`,
   `الأذكار بعد السلام من الصلاة`,
   afterPrayer
 );

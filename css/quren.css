@@ -542,8 +542,14 @@ footer .content .botoom a .item {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  
 }
+
+
 @media (max-width: 540px) {
+  .quren .container .content .page .content .curoil .curoil-item .parint-start-soure .soure-name { 
+     font-size: small;
+  }
   .quren .container .content .page .seting-page * {
     font-size: small !important;
   }

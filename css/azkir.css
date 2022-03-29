@@ -313,7 +313,14 @@ footer .content .botoom a .item {
   font-size: xx-large;
   margin-bottom: 1rem;
   text-align: justify;
+  
 }
+
+@media (max-width: 540px) {
+ .azkir .container .allContent div[id] .content .item .text {
+   font-size: medium;
+}
+
 .azkir .container .allContent div[id] .content .item .count {
   position: relative;
   width: 40px;
